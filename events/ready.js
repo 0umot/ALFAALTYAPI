@@ -1,8 +1,8 @@
 const chalk = require("chalk");
 const moment = require("moment");
 const Discord = require("discord.js");
-const rabel = require('../gweep/rabel.json');
-var prefix = rabel.prefix;
+const arroiz = require('../arroiz/arroiz.json');
+var prefix = arroiz.prefix;
 
 module.exports = async client => {
 
