@@ -3,11 +3,11 @@ const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
 require("./util/eventLoader")(client);
-//
+//Skorsky-Global#3229
 const log = message => {
   console.log(`${message}`);
 };
-
+//Skorsky-Global#3229
 client.ayarlar = { 
 "token": "NzcwNzY0MTAwMjMyOTM3NTEy.X5iUAQ.b-zmavzs4MTpMgIA_uIHqvWTMMo", // token
 "prefix": "-", // prefix
@@ -232,20 +232,20 @@ client.on('roleDelete', async role => {
   client.on('emojiDelete', async emoji => {
   const sistem = await data.fetch(`korumalar.${emoji.guild.id}`);
   if(!sistem) return;
-  //gweep creative
+  
   let guild = emoji.guild;
   const entry = await guild.fetchAuditLogs({ type: "EMOJI_DELETE" }).then(audit => audit.entries.first());
   let member = entry.executor;
-  //gweep creative
+  
   if(member.id == guild.owner.user.id) return;
   let yetkili = guild.members.cache.get(member.id);
   yetkili.roles.cache.forEach(s => {
   if(s.permissions.has('MANAGE_EMOJIS')) return yetkili.roles.remove(s.id);
   })
-  //gweep creative
+  
   guild.emojis.create(emoji.url, emoji.name);
   })
-//gweep creative
+
   client.on('guildMemberAdd', async member => {
   let user = member.user;
   let guild = member.guild;
