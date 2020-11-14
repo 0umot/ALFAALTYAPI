@@ -1,22 +1,44 @@
-const Discord = require("discord.js");
-const db = require("quick.db")
+const db = require('quick.db')
+const Discord = require('discord.js')
+const client = new Discord.Client();
+const ayarlar = require("../ayarlar.json")
+
 exports.run = async (client, message, args) => {
-  if (!args[0]) {
-    return message.channel.send("Lütfen bir id yazın!")
-  }
-  message.channel.send("Pre aktif edildi amk!")
-  return db.set(`premium_${args[0]}`, "aktif")
+
+if(message.author.id != ayarlar.sahip) { return message.channel.send("❌ Sahibimin Komutunu Kullanamazsın")}
+
+  let nesne = args[0]
+
+  if (!nesne) return message.channel.send('Bir kullanıcının IDsini girmelisin?')
+
+  db.set(`gold_${nesne}`, 'gold')
+
+
+
+  message.channel.send(`\`${nesne}\` IDli kullanıcı artık gold üye oldu!`)
+
+
+
 }
 
-module.exports.conf = {
+exports.conf = {
+
   enabled: true,
+
   guildOnly: false,
-  aliases: ["prever"],
-  permLevel: 0
+
+  aliases: [],
+
+  permLevel: 4
+
 };
 
-module.exports.help = {
-  name: 'premiumver',
-  description: 'Botta bulunan tüm komutları gösterir',
-  usage: 'komutlar'
+exports.help = {
+
+  name: 'goldyap',
+
+  description: 'Gold üye yaparsınız',
+
+  usage: 'goldyap <ID>'
+
 };
