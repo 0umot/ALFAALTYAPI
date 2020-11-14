@@ -3,7 +3,7 @@ const data = require('quick.db');
 
 exports.run = async (client, message, args) => {
 
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('CloudUP Yasaklı Tag Sistem').setDescription(`
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('Alfa Yasaklı Tag Sistem').setDescription(`
 \`${client.ayarlar.prefix}oto-tag 🚀\`
 **Sunucunuza giren kullanıcıların isminin başına koyar**
 

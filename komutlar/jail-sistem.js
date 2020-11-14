@@ -3,7 +3,7 @@ const data = require('quick.db');
 
 exports.run = async (client, message, args) => {
 
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('CloudUP Jail Karantina Sistem').setDescription(`
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('Alfa Jail Karantina Sistem').setDescription(`
 \`${client.ayarlar.prefix}jail-log [#kanalEtiket]\` **|** \`${client.ayarlar.prefix}jail-log-kapat\`
 Jail sistemi için gereklidir. **Karantina** kanalını seçmeniz gerekiyor.
 

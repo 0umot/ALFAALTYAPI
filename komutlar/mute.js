@@ -56,7 +56,7 @@ message.channel.send(new Discord.MessageEmbed().setDescription(`○ ${member} **
 
 message.guild.channels.cache.get(logChannel).send(new Discord.MessageEmbed()
 .setColor('#00001')
-.setTitle('CloudUP - Chat Mute Sistem')
+.setTitle('Alfa - Chat Mute Sistem')
 .setDescription(`○ **Kullanan Yetkili:** \`${message.author.tag}\`
 ○ **Kullanılan kişi:** \`${member.user.tag}\`
 ○ **Açıklama:** \`${reason}\`
@@ -67,7 +67,7 @@ message.guild.channels.cache.get(logChannel).send(new Discord.MessageEmbed()
 setTimeout(() => {
 
 message.guild.channels.cache.get(logChannel).send(new Discord.MessageEmbed()
-.setTitle('CloudUP - Chat Mute Sistem')
+.setTitle('Alfa - Chat Mute Sistem')
 .setDescription(`○ ${member.user} **kullanıcısının chat mute süresi bitti!**`))
 
 message.guild.channels.cache.filter(a => a.type === 'text').forEach(s => {

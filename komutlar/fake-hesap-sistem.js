@@ -3,7 +3,7 @@ const data = require('quick.db');
 
 exports.run = async (client, message, args) => {
 
-message.channel.send(new Discord.MessageEmbed().setTitle('CloudUP Fake Hesap Sistem').setDescription(`
+message.channel.send(new Discord.MessageEmbed().setTitle('Alfa Fake Hesap Sistem').setDescription(`
 \`${client.ayarlar.prefix}yeni-üye-role [@rolEtiket]\`
 **Sunucunuza giren kullanıcılara verilen rolü etiketle**
 

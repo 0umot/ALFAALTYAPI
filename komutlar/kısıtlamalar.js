@@ -4,7 +4,7 @@ const data = require('quick.db');
 exports.run = async (client, message, args) => {
 
 message.channel.send(new Discord.MessageEmbed()
-.setTitle('CloudUP Kısıtlı Koruma')
+.setTitle('Alfa Kısıtlı Koruma')
 .addField('Selam karşılama için', `\`\`\`${client.ayarlar.prefix}selam aç & ${client.ayarlar.prefix}selam kapat\`\`\``)
 .addField('Küfür Kısıtlamak', `\`\`\`${client.ayarlar.prefix}küfür kısıt & ${client.ayarlar.prefix}küfür kapat\`\`\``)
 .addField('Reklam Kısıtlamak', `\`\`\`${client.ayarlar.prefix}reklam kısıt & ${client.ayarlar.prefix}reklam kapat\`\`\``)

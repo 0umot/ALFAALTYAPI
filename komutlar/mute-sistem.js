@@ -3,7 +3,7 @@ const data = require('quick.db');
 
 exports.run = async (client, message, args) => {
 
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('CloudUP Ses & Chat Mute').setDescription(`
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('Alfa Ses & Chat Mute').setDescription(`
 👌 \`${client.ayarlar.prefix}mute [@üyeEtiket] 1m\`
 **Yazılı kanallarda mutelemek için kullanılır**
 

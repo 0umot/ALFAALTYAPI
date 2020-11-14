@@ -3,7 +3,7 @@ const data = require('quick.db');
 
 exports.run = async (client, message, args) => {
 
-message.channel.send(new Discord.MessageEmbed().setTitle('CloudUP Ban Sistem').setDescription(`
+message.channel.send(new Discord.MessageEmbed().setTitle('Alfa Ban Sistem').setDescription(`
 \`${client.ayarlar.prefix}ban-log [@kanalEtiket]\`
 **Belirtilen kanala yasaklanma bilgisini gönderir**
 
