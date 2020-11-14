@@ -5,8 +5,8 @@ const arroiz = require('../arroiz/arroiz.json');
 var prefix = arroiz.prefix;
 
 module.exports = async client => {
-
-    client.user.setActivity(``, { type: "PLAYING" });
+  
+  client.user.setPresence({ activity: { name: `Alfa V12 Uptime Botu`, type: "STREAMING", url: "TWİTCH URL" } })
   client.user.setStatus("online");
   console.log("Aktif!")
 };

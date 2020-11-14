@@ -104,6 +104,7 @@ logs(client);
 
 
 client.on('ready', async () => {
+client.user.setPresence({ activity: { name: `Alfa V12 Uptime Botu`, type: "STREAMING", url: "TWİTCH URL" } })
 client.user.setStatus('online');
 console.log(`${client.user.username} ismiyle bağlandım.`);
 })
