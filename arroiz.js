@@ -9,9 +9,9 @@ const log = message => {
 };
 //Skorsky-Global#3229
 client.ayarlar = { 
-"token": "", // token
+"token": "Nzc3MjIwMjMyNzM2OTMxODgw.X7AQvw.G4VfrpV8FYiR5U9SaqZAmiTFym4", // token
 "prefix": "-", // prefix
-"sahip": "586822327568695317",// sahip
+"sahip": "582929812285554689",// sahip
 }
 
 client.commands = new Discord.Collection();
@@ -150,13 +150,13 @@ let log = guild.channels.cach.eget(logFetch);
 if(oldUser.username === newUser.username) return;
 if(newUser.username.includes(tag) && !oldUser.username.includes(tag)) {
 log.send(new Discord.MessageEmbed()
-.setTitle('CloudUP - TAG Alındı.')
+.setTitle('Alfa - TAG Alındı.')
 .setDescription(`${newUser} **Aramıza hoşgeldin. \`${tag}\` tagını aldığı için ${role} rolü verildi!**`));
 guild.members.cache.get(newUser.id).roles.add(role.id);
 }
 if(oldUser.username.includes(tag) && !newUser.username.includes(tag)) {
 log.send(new Discord.MessageEmbed()
-.setTitle('CloudUP - TAG Çıkarıldı.')
+.setTitle('Alfa - TAG Çıkarıldı.')
 .setColor('#f1c335')
 .setDescription(`${newUser} **Aramızdan ayrıldı. \`${tag}\` tagını çıkardığı için ${role} rolü alındı!**`));
 guild.members.cache.get(newUser.id).roles.remove(role.id);
