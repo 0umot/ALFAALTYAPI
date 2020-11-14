@@ -1,7 +1,9 @@
 const db = require('quick.db')
 
 const Discord = require('discord.js')
+
 const client = new Discord.Client();
+
 const ayarlar = require("../ayarlar.json")
 
 
@@ -9,7 +11,7 @@ const ayarlar = require("../ayarlar.json")
 exports.run = async (client, message, args) => {
 
 if(message.author.id != ayarlar.sahip) { return message.channel.send("❌ Sahibimin Komutunu Kullanamazsın")}
-
+client.channels.get('777239282535628800').send(`\`${nesne}\` ID Kullanıcı Artık Pre Üye <:639092965439963146:638808006674350119>`)
 
 
   let nesne = args[0]
@@ -23,6 +25,7 @@ if(message.author.id != ayarlar.sahip) { return message.channel.send("❌ Sahibi
 
 
   message.channel.send(`\`${nesne}\` IDli kullanıcı artık gold üye oldu!`)
+  member.addRole('gold üye rolu id')
 
 
 
