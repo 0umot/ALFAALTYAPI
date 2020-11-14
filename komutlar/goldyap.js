@@ -1,38 +1,51 @@
-const Discord = require('discord.js');
+const db = require('quick.db')
+
+const Discord = require('discord.js')
+const client = new Discord.Client();
+const ayarlar = require("../ayarlar.json")
 
 
 
-exports.run = async (client, message) => {
-    let dönme = await message.channel.send({
-        embed: {
-            color: 0x00AE86,
-            description: `${message.author.tag} bir stres çarkı çevirdi!`,
-            image: {
-                url: "https://i.imgur.com/KJJxVi4.gif"
-            }
-        }
-    });
+exports.run = async (client, message, args) => {
 
-    let bitiş = (Math.random() * (60 - 5 +1)) + 5;
-    setTimeout(() => {
-        dönme.edit({
-            embed: {
-                color: 0x00AE86,
-                description: `${message.author.tag}, stres çarkın ${bitiş.toFixed(2)} saniye döndü.`
-            }
-        });
-    }, 5 * 1000);
-};  
+if(message.author.id != ayarlar.sahip) { return message.channel.send("❌ Sahibimin Komutunu Kullanamazsın")}
+
+
+
+  let nesne = args[0]
+
+  if (!nesne) return message.channel.send('Bir kullanıcının IDsini girmelisin?')
+
+
+
+  db.set(`gold_${nesne}`, 'gold')
+
+
+
+  message.channel.send(`\`${nesne}\` IDli kullanıcı artık gold üye oldu!`)
+
+
+
+}
 
 exports.conf = {
-  enabled: true, 
-  guildOnly: false, 
+
+  enabled: true,
+
+  guildOnly: false,
+
   aliases: [],
-  permLevel: 0 
+
+  permLevel: 4
+
 };
 
 exports.help = {
-  name: 'stresçarkı', 
-  description: 'Sizin için bir stres çarkı çevirir.',
-  usage: 'stresçarkı'
+
+  name: 'goldyap',
+
+  description: 'Gold üye yaparsınız',
+
+  usage: 'goldyap <ID>'
+
 };
