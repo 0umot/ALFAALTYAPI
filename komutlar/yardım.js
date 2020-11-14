@@ -6,7 +6,7 @@ exports.run = async (client, message, args) => {
     return this[Math.floor(Math.random() * this.length)];
   }
 
-let images = ['https://media.discordapp.net/attachments/759022175444926514/773963799978967080/350kb_1.gif', 'https://media.discordapp.net/attachments/759022175444926514/773963799978967080/350kb_1.gif'];
+let images = ['https://topg.org/image/461120/412323.gif', 'https://topg.org/image/461120/412323.gif'];
 message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Alfa Ana Menüsüne Hoş Geldin Dostum :innocent:
 ${client.user} Kullanırken \`@Alfa\` rolünü en yukarıda tutunuz.**
 **
