@@ -33,5 +33,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'Trol-al'
+  name: 'trv'
 };
