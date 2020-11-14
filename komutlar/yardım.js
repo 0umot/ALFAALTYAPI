@@ -6,9 +6,9 @@ exports.run = async (client, message, args) => {
     return this[Math.floor(Math.random() * this.length)];
   }
 
-let images = ['https://media.giphy.com/media/mBkM18U5OMSkTcDmeu/giphy.gif', 'https://media.giphy.com/media/RGRzukK0YNlQbZEUVP/giphy.gif'];
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**CloudUP Ana Menüsüne Hoş Geldin Dostum :innocent:
-${client.user} Kullanırken \`@CloudUP\` rolünü en yukarıda tutunuz.**
+let images = ['https://media.discordapp.net/attachments/759022175444926514/773963799978967080/350kb_1.gif', 'https://media.discordapp.net/attachments/759022175444926514/773963799978967080/350kb_1.gif'];
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Alfa Ana Menüsüne Hoş Geldin Dostum :innocent:
+${client.user} Kullanırken \`@Alfa\` rolünü en yukarıda tutunuz.**
 **
 🐝 \`${client.ayarlar.prefix}kayıt-içerik\`
 
@@ -30,12 +30,12 @@ ${client.user} Kullanırken \`@CloudUP\` rolünü en yukarıda tutunuz.**
 > Yasak tag, Oto isim, Komut mesaj, Fake hesap, 
 > Sunucu tema, Kanal arındır \`&\` Rol arındır
 
-💸 İninal Barkod NO: \`123456789123\`
-💸 Papara Hesap NO: \`1234567891\`
+💸 İninal Barkod NO: \`Yakında\`
+💸 Papara Hesap NO: \`Yakında\`
 
 
-💐 CloudUP Youtube Eğitim: :)
-**`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png').setImage(images.random()))
+💐 Alfa Bot :)
+**`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://media.discordapp.net/attachments/759022175444926514/773963799978967080/350kb_1.gif').setImage(images.random()))
 
 };
 exports.conf = {

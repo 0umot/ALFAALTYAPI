@@ -3,7 +3,7 @@ const data = require('quick.db');
 
 exports.run = async (client, message, args) => {
 
-message.channel.send(new Discord.MessageEmbed().setTitle('CloudUP Giriş & Sayaç Sistem').setDescription(`\`${client.ayarlar.prefix}sayaç [#kanalEtiket 1000]\` 
+message.channel.send(new Discord.MessageEmbed().setTitle('Alfa Giriş & Sayaç Sistem').setDescription(`\`${client.ayarlar.prefix}sayaç [#kanalEtiket 1000]\` 
 **Sunucun için toplam bir rakam tut**
 
 \`${client.ayarlar.prefix}sayaç-kapat\` 

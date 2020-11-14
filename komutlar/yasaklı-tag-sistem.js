@@ -3,7 +3,7 @@ const data = require('quick.db');
 
 exports.run = async (client, message, args) => {
 
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('CloudUP Yasaklı Tag Sistem').setDescription(`
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('Alfa Yasaklı Tag Sistem').setDescription(`
 \`${client.ayarlar.prefix}yasaklı-tag 🚀\`
 Yasaklı **tagınızı** yada **simgenizi** koyarak aktif edersiniz
 
@@ -20,7 +20,7 @@ Ayarlamış olduğunuz **yasaklı tag** rolünü siler
 **Ayarlı bulunan yasaklı tagınızı kapatır**
 
 \`${client.ayarlar.prefix}yasaklı-yeni-üye-role-sil\`
-**Ayarlı olan yeni üye rolünü kapatır**`).setImage('https://cdn.glitch.com/6f5bb25b-c11b-4003-8a39-69490341df18%2Fgiphy%20(9).gif').setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png'));
+**Ayarlı olan yeni üye rolünü kapatır**`).setImage('https://media.discordapp.net/attachments/759022175444926514/773963799978967080/350kb_1.gif').setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png'));
 
 };
 exports.conf = {

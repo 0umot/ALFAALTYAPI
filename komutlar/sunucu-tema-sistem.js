@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
 
 message.channel.send(new Discord.MessageEmbed()
 .setColor('#00001')
-.setTitle('CloudUP Sunucu Tema Şablon Sistem')
+.setTitle('Alfa Sunucu Tema Şablon Sistem')
 .setDescription(`**Tüm şablonlar ${client.user.username}'a Aittir.**
 İçerikler de birden fazla tema var.
 

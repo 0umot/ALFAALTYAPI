@@ -49,7 +49,7 @@ if(!args[2]) reason = 'Bir açıklama yok.';
 
 message.guild.channels.cache.get(logChannel).send(new Discord.MessageEmbed()
 .setColor('#00001')
-.setTitle('CloudUP - Sesli Mute Sistem')
+.setTitle('Alfa - Sesli Mute Sistem')
 .setDescription(`○ **Kullanan Yetkili:** \`${message.author.tag}\`
 ○ **Kullanılan kişi:** \`${member.user.tag}\`
 ○ **Açıklama:** \`${reason}\`

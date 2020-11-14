@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
 
 message.channel.send(new Discord.MessageEmbed()
 .setColor('#000001')
-.setTitle('CloudUP Tag Rol & Kanal')
+.setTitle('Alfa Tag Rol & Kanal')
 .setDescription(`\`${client.ayarlar.prefix}rol-tag 🚀\`
 **Lütfen tag ayarlayınız başlamadan önce**
 

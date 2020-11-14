@@ -33,5 +33,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'sunucudan-ayrıl'
+  name: 'ayrıl'
 };
