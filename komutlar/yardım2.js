@@ -33,7 +33,7 @@ Toplu rol ile hem alıp hem de verebileceğiniz sistem
 
 
 💐 Alfa :)
-**`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://media.discordapp.net/attachments/759022175444926514/773963799978967080/350kb_1.gif').setImage(images.random()))
+**`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://topg.org/image/461120/412323.gif').setImage(images.random()))
 
 };
 exports.conf = {
